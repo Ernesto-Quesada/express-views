@@ -1,0 +1,30 @@
+<div class="container">
+    
+
+<h2> Red </h2>
+
+<ul style="list-style-type:none">
+    <div class="row">
+  <% colors.forEach((color)=>{ %>
+  <% if (color.category==="red"){%>
+    <li>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <div style="width:100%; height:200px; background-color:<%= color.hex%>;">
+          </div>
+           <div class="caption">
+             <p><%= color.keyword %></p>
+             <p><%= color.hex %></p>
+
+           </div>
+        </div>
+     </div>
+    </li>
+  <% } %>
+  <% })%>
+    </div>
+</ul>
+
+
+<a href="/"> Back to Home </a>
+</div>
